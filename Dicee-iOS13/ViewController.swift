@@ -9,12 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //IBOutet Alows to Ref UI Elements - CTRL Drag.
     @IBOutlet var diceImageView1: UIImageView!
+    
+    @IBOutlet weak var diceImageView2: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        diceImageView1.image = UIImage(named: "DiceSix")
+        //Who           //What
+        diceImageView1.image = UIImage(named: "DiceSix")//Value
+        diceImageView1.alpha = 0.5
+        
+        diceImageView2.image = UIImage(named: "DiceTwo")
     }
 
 

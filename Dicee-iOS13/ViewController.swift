@@ -18,11 +18,6 @@ class ViewController: UIViewController {
     var leftDiceNumber = 1
     var rightDiceNumber = 5
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-       
-    }
 
 
     @IBAction func rollButtonPressed(_ sender: UIButton) {
@@ -30,9 +25,9 @@ class ViewController: UIViewController {
         diceImageView1.image = [ #imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix") ][leftDiceNumber]
         diceImageView2.image = [ #imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix") ][rightDiceNumber]
         
-        leftDiceNumber = leftDiceNumber + 1
+        leftDiceNumber += 1
         print("leftDiceNumber at beginning is \(leftDiceNumber)")
-        rightDiceNumber = rightDiceNumber - 1
+        rightDiceNumber -= 1
         
         
         
